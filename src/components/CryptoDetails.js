@@ -3,6 +3,7 @@ import HTMLReactParser from "html-react-parser";
 import { useParams } from "react-router-dom";
 import millify from "millify";
 import { Col, Row, Typography, Select } from "antd";
+import Loader from "./Loader";
 import {
 	MoneyCollectOutlined,
 	DollarCircleOutlined,
@@ -20,6 +21,7 @@ import LineChart from './LineChart'
 
 const { Title, Text } = Typography;
 const { Option } = Select;
+
 
 function CryptoDetails() {
 	const { coinId } = useParams();
@@ -40,7 +42,7 @@ function CryptoDetails() {
 		{ title: "Rank", value: cryptoDetails?.rank, icon: <NumberOutlined /> },
 		{
 			title: "24h Volume",
-			value: `$ ${cryptoDetails?.volume && millify(cryptoDetails?.volume)}`,
+			value: `$ ${cryptoDetails?.["24hVolume"] && millify(cryptoDetails?.["24hVolume"])}`,
 			icon: <ThunderboltOutlined />,
 		},
 		{
@@ -72,7 +74,7 @@ function CryptoDetails() {
 			icon: <MoneyCollectOutlined />,
 		},
 		{
-			title: "Aprroved Supply",
+			title: "Approved Supply",
 			value: cryptoDetails?.supply?.confirmed ? (
 				<CheckOutlined />
 			) : (
@@ -97,7 +99,7 @@ function CryptoDetails() {
 		},
 	];
 
-  if(isFetching) return 'Loading...'
+  if(isFetching) return <Loader />
 
 	return (
 		<Col className="coin-detail-container">
