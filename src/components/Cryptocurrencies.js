@@ -7,10 +7,12 @@ import Loader from "./Loader";
 import { useGetCryptosQuery } from "../services/cryptoApi";
 
 function Cryptocurrencies({ simplified }) {
+	//render only 10 cryptos in homepage
 	const count = simplified ? 10 : 100;
 	//Redux data from cryptoApi
 	const { data: cryptosList, isFetching } = useGetCryptosQuery(count);
 	const [cryptos, setCryptos] = useState([]);
+	//state for crypto search
 	const [searchTerm, setSearchTerm] = useState("");
 
 	useEffect(() => {

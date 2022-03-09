@@ -14,7 +14,7 @@ const createRequest = (url) => ({ url, headers: cryptoNewsHeaders });
 export const cryptoNewsApi = createApi({
 	reducerPath: 'cryptoNewsApi',
 	baseQuery: fetchBaseQuery({ baseUrl }),
-  //creating a hook to call data from API 
+  //creating a redux hook to call data from API 
 	endpoints: (builder) => ({
 		getCryptoNews: builder.query({
 			query: ({newsCategory, count}) => createRequest(`/news/search?q=${newsCategory}&safeSearch=Off&textFormat=Raw&freshness=Day&count=${count}`),
