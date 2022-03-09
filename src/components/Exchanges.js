@@ -23,23 +23,27 @@ function Exchanges() {
 				<Col span={6}>Markets</Col>
 				<Col span={6}>Change</Col>
 			</Row>
-      <Row>
+      <Row><Col span={24}>
         {exchangesList.map((exchange) => (
-          <Col span={24}>
+          
           <Collapse>
           <Panel key={exchange.id} showArrow={false} header={(
             <Row key={exchange.id}>
               <Col span={6}>
-                <Text>{exchange.trust_score_rank}</Text>
+                <Text><strong>{exchange.trust_score_rank}.</strong></Text>
+                <Avatar className='exchange-image' src={exchange.image}/>
+                <Text><strong>{exchange.name}</strong></Text>
               </Col>
-
+                <Col span={6}>$ {millify(exchange.trade_volume_24h_btc)}</Col>
+                <Col span={6}></Col>
+                <Col span={6}></Col>
             </Row>
           )}>
 
           </Panel>
           </Collapse>
-          </Col>
-        ))}
+          
+        ))}</Col>
       </Row>
 		</>
 	);
