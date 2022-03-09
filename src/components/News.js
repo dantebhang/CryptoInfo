@@ -11,7 +11,7 @@ const { Option } = Select;
 
 //download demo image
 const demoImage =
-	"https://www.bing.com/th?id=OVFT.mpzuVZnv8dwIMRfQGPbOPC&pid=News";
+	"https://static.news.bitcoin.com/wp-content/uploads/2022/01/hhhh8899.jpg";
 
 
 function News({ simplified }) {
