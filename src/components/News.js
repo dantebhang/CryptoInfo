@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Select, Typography, Row, Col, Avatar, Card } from "antd";
 import moment from "moment";
 import Loader from "./Loader";
+import demoImage from '../images/demoNewsImg.PNG';
+
 
 import { useGetCryptoNewsQuery } from "../services/cryptoNewsApi";
 import { useGetCryptosQuery } from "../services/cryptoApi";
@@ -9,11 +11,6 @@ import { useGetCryptosQuery } from "../services/cryptoApi";
 //destructuring for ant components
 const { Text, Title } = Typography;
 const { Option } = Select;
-
-//download demo image
-const demoImage =
-	"https://static.news.bitcoin.com/wp-content/uploads/2022/01/hhhh8899.jpg";
-
 
 function News({ simplified }) {
 	const [newsCategory, setNewsCategory] = useState("Cryptocurrency");
