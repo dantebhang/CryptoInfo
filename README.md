@@ -5,13 +5,11 @@
 This application was built using React best practices while utilizing API state management through Redux Toolkit. Ant Design was implemented to create the UI and line charts with Chart.js. Data was fetched using multiple sources:
 
 [Coinranking API](https://developers.coinranking.com/api/documentation)
-
 [Bing News Search API](https://www.microsoft.com/en-us/bing/apis/bing-news-search-api)
-
 [Coin Gecko API](https://www.coingecko.com/en/api)
 
 
- [Live Demo](https://cryptoinfosho.netlify.app/)
+ Feel free to see a live demo [here.](https://cryptoinfosho.netlify.app/)
 
 ## Installation
 1. Fork/Clone this repository. 
