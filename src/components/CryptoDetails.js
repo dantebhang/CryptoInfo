@@ -31,8 +31,10 @@ function CryptoDetails() {
 
 	const cryptoDetails = data?.data?.coin;
 
+	//filter line chart rendering based on time period
 	const time = ["3h", "24h", "7d", "30d", "1y", "3m", "3y", "5y"];
 
+	//row name and icons for each crypto statistic 
 	const stats = [
 		{
 			title: "Price to USD",

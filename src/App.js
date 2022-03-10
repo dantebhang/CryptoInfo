@@ -9,10 +9,11 @@ import {
 	Cryptocurrencies,
 	News,
 	CryptoDetails,
+	NotFound,
 } from "./components";
 import "./App.css";
 
-//add not Found route
+
 function App() {
 	return (
 		<div className="app">
@@ -38,6 +39,9 @@ function App() {
 							<Route exact path="/news">
 								<News />
 							</Route>
+							<Route>
+								<NotFound />
+							</Route>
 						</Switch>
 					</div>
 				</Layout>
@@ -47,7 +51,7 @@ function App() {
 						level={5}
 						style={{ color: "white", textAlign: "center" }}
 					>
-						Cryptoverse <br />
+						CryptoInfo <br />
 						All rights reserved
 					</Typography.Title>
 					<Space>
