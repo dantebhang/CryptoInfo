@@ -22,7 +22,7 @@ This responsive application was built using React best practices while utilizing
 - Global statistics of cryptocurrencies are displayed at the top of the page. 
 - Top 10 current cryptocurrencies will be followed next which are displayed in clickable cards to show more information of each crypto. *Show more* will take you to the `/cryptocurrencies` route. 
 - The latest crypto news are also displayed as clickable cards that will lead you to each respectable news article. *Show more* will take you to `/news` route. 
-![homepage video preview](https://www.loom.com/embed/665c966a9ee84bf89a569afe051c02c5?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true)
+https://user-images.githubusercontent.com/87205105/157776108-eea0006b-edb3-4b63-ac48-7d22ad96b08f.mp4
 
 **Cryptocurrencies**
 - The cryptocurrencies page is displayed at `/cryptocurrencies` route. 
