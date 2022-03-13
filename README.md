@@ -2,7 +2,7 @@
 > A React application using public APIs to display cryptocurrency details and news. 
 
 ## Description
-This responsive application was built using React best practices while utilizing API state management through Redux Toolkit. Ant Design was implemented to create the UI and line charts with Chart.js. Data was fetched using multiple sources:
+This responsive application was built using React best practices while utilizing API state management through Redux Toolkit and RTK Query. Ant Design was implemented to create the UI and line charts with Chart.js. Data was fetched using multiple sources:
 
 1. [Coinranking API](https://developers.coinranking.com/api/documentation) was used to list all cryptocurrencies and related information. 
 2. [Bing News Search API](https://www.microsoft.com/en-us/bing/apis/bing-news-search-api) was used to get the latest crypto news. 
@@ -58,7 +58,7 @@ https://user-images.githubusercontent.com/87205105/157777209-7f10a948-ea8f-490f-
 
 
 ## Comments 
-I picked up this project to introduce myself to React Redux but ending picking up other skills like Ant Design and Chart.js. This is my first time using these technologies and it's been a great learning experience. I really enjoyed how simple it was to handle state management utilizing React Redux Toolkit and can see the many benefits this would bring for handling a larger website with more data. The implementation of detailed error messages was also an added plus! I initially wanted to display more live data in the Exchanges page but was unable to find a free API that gave me the latest exchanges of cryptocurrency.   
+I picked up this project to introduce myself to React Redux but ending picking up other skills like Ant Design and Chart.js. This is my first time using these technologies and it's been a great learning experience. I really enjoyed how simple it was to handle state management utilizing React Redux Toolkit coupled with RTK Query for data fetching and caching; I can see the many benefits this would bring for handling a larger website with more data. The implementation of detailed error messages was also an added plus! I initially wanted to display more live data in the Exchanges page but was unable to find a free API that gave me the latest exchanges of cryptocurrency.   
 
 ## Technology and Tools
 
